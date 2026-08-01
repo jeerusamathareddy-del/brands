@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<link rel="stylesheet" href="bootstrap.css">
+<link rel="stylesheet" href="mdb.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+<style>
+.card{
+    margin-bottom:20px;
+}
+
+.card img{
+    width: 100%;
+    height: 350px;       /* Same height for all images */
+    object-fit: cover;   /* Crop image without stretching */
+}
+
+.brand-card .card-body{
+    min-height:220px;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+}
+.gallery-img{
+    width: 100%;
+    height: 250px;      /* Same height for all images */
+    object-fit: cover;  /* Crops image without stretching */
+    border-radius: 8px;
+}
+</style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+<div class="container">
+<a class="navbar-brand" href="#">
+<i class="fa fa-mobile"></i> Smart Phones
+</a>
+<ul class="navbar-nav">
+<li class="nav-item active">
+<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+</li>
+<li class="nav-item px-3">
+<a class="nav-link" href="#">Search</a>
+</li>
+<li class="nav-item px-3">
+<a class="nav-link" href="#">Visiting Spots</a>
+</li>
+<li class="nav-item px-3">
+<a class="nav-link" href="#">Gallery</a>
+</li>
+<li class="nav-item px-3">
+<a class="nav-link" href="#">Contact</a>
+</li>
+</ul>
+</div>
+</nav>
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+<div class="carousel-indicators">
+<li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+<li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+<li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+</div>
+<div class="carousel-inner">
+<div class="carousel-item active">
+<img src="slider_1.jpg" class="d-block w-100" alt="...">
+<div class="carousel-caption d-none d-md-block">
+<h1>Android</h1>
+<p>Some representative placeholder content for the first slide.</p>
+</div>
+</div>
+<div class="carousel-item">
+<img src="slider_2.jpg" class="d-block w-100" alt="...">
+<div class="carousel-caption d-none d-md-block">
+<h5>Second slide label</h5>
+<p>Some representative placeholder content for the second slide.</p>
+</div>
+</div>
+<div class="carousel-item">
+<img src="slider_3.jpg" class="d-block w-100" alt="...">
+<div class="carousel-caption d-none d-md-block">
+<h5>Third slide label</h5>
+<p>Some representative placeholder content for the third slide.</p>
+</div>
+</div>
+</div>
+</div>
+<section class="bg-secondary text-white">
+<div class="container p-3">
+<div class="row">
+<div class="col">
+<h5 class="display-4">Find Your Perfect Smartphone</h5>
+<p>Browse the latest smartphones from leading brands. Compare specifications, prices, and features to choose the phone that best fits your lifestyle and budget.</p>
+<div class="row">
+<div class="col-md-6">
+<input type="text" class="form-control" placeholder="Paris">
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="bg-light p-4">
+<div class="container">
+<div class="row">
+<div class="col-md-4">
+<div class="card text-center mt-3">
+<div class="card-body">
+<i class="bi bi-telephone-fill fa-4x"></i>
+<p class="h2">Choose Your Brand</p>
+<p>Explore top smartphone  Vivo, and Oppo. Compare their features, designs, and performance to find the perfect phone for your needs.</p>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card text-center mt-3">
+<div class="card-body">
+<i class="fa fa-building fa-4x"></i>
+<p class="h2">Compare Features</p>
+<p>Compare camera quality, processor speed, battery life, display technology, storage options, and price to make an informed buying decision.</p>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card text-center mt-3">
+<div class="card-body">
+<i class="fa fa-solid fa-tags fa-4x"></i>
+<p class="h2">Best Deals</p>
+<p>Discover the latest smartphone offers, seasonal discounts, exchange deals, and cashback rewards from leading mobile brands and online stores.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="container">
+<div class="row text-center">
+<div class="col">
+<h5 class="display-4">
+<span class="text-primary">Popular</span> Phone Brands
+</h5>
+<p class="h5">Explore the world's leading smartphone brands known for their innovative technology, stylish designs, powerful performance, and advanced camera features. Compare different brands to choose the perfect smartphone for your needs.
+</p>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4">
+<div class="card brand-card">
+<img src="card_1.jpg" class="img-fluid gallery-img">
+<div class="card-body">
+<h3 class="card-title">Samsung</h3>
+<p class="card-text">Samsung offers feature-rich smartphones with AMOLED displays, powerful processors, excellent cameras, and long-lasting battery life.</p>
+<button class="btn btn-primary btn-sm">Read More</button>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<img src="card_2.jpg" alt="">
+<div class="card-body">
+<h3 class="card-title">Apple</h3>
+<p class="card-text">Apple iPhones are known for their premium design, smooth iOS experience, high security, powerful performance, and outstanding cameras.</p>
+<button class="btn btn-primary btn-sm">Read More</button>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<img src="card_3.jpg" alt="">
+<div class="card-body">
+<h3 class="card-title">One Plus</h3>
+<p class="card-text">OnePlus smartphones deliver fast performance, clean OxygenOS, high-refresh-rate displays, and super-fast charging technology.</p>
+<button class="btn btn-primary btn-sm">Read More</button>
+</div>
+</div>
+</div>
+</div>
+<div class="row mt-3">
+<div class="col text-center">
+<button class="btn btn-dark btn-lg">
+<i class="fa fa-play mr-2"></i>Start Booking
+</button>
+</div>
+</div>
+</section>
+<section class="bg-warning p-3 text-center">
+<div class="row">
+<div class="col">
+<h1>Follow SmartPhones</h1>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta minima nam vitae tenetur ea recusandae tempora 
+laboriosam, debitis iusto blanditiis quos earum perferendis eos ipsum perspiciatis, distinctio repudiandae, voluptatibus 
+autem!</p>
+<i class="bi bi-facebook h1 m-3"></i>
+<i class="bi bi-youtube h1 m-3"></i>
+<i class="bi bi-google h1 m-3"></i>
+<i class="bi bi-twitter h1"></i>
+</div>
+</div>
+</section>
+<section>
+<div>
+<div class="text-center">
+<h5 class="display-4">
+<span class="text-primary">Photo</span> Gallery
+</h5>
+</div>
+</div>
+<div class="container">
+<div class="row">
+<div class="col-md-3">
+<img src="card_1.jpg" alt="" class="img-fluid">
+</div>
+<div class="col-md-3">
+<img src="card_2.jpg" alt="" class="img-fluid">
+</div>
+<div class="col-md-3">
+<img src="slider_1.jpg" alt="" class="img-fluid">
+</div>
+<div class="col-md-3">
+<img src="gal_4.jpg" alt="" class="img-fluid">
+</div>
+</div>
+<div class="row mt-3">
+    <div class="col-md-3">
+        <img src="card_3.jpg" alt="" class="img-fluid gallery-img">
+    </div>
+
+    <div class="col-md-3">
+        <img src="slider_2.jpg" alt="" class="img-fluid gallery-img">
+    </div>
+
+    <div class="col-md-3">
+        <img src="gal_1.jpg" alt="" class="img-fluid gallery-img">
+    </div>
+
+    <div class="col-md-3">
+        <img src="gal_2.jpg" alt="" class="img-fluid gallery-img">
+    </div>
+</div>
+<div class="row mt-3">
+<div class="col-md-3">
+<img src="gal_4.jpg" alt="" class="img-fluid">
+</div>
+<div class="col-md-3">
+<img src="gal_3.jpg" alt="" class="img-fluid">
+</div>
+<div class="col-md-3">
+<img src="gal_1.jpg" alt="" class="img-fluid">
+</div>
+<div class="col-md-3">
+<img src="gal_2.jpg" alt="" class="img-fluid">
+</div>
+</div>
+</div>
+</section>
+<section class="p-3">
+<div class="container">
+<div class="row">
+
+<!-- Left Side -->
+<div class="col-md-6">
+<div class="card">
+<div class="card-body bg-secondary text-white text-center">
+<i class="fa fa-envelope fa-4x"></i>
+<h2>Contact for Bookings</h2>
+<p>
+Have questions about our smartphones or need help choosing the right device?
+Our support team is here to assist you with product information, pricing,
+features, and the latest offers.
+</p>
+</div>
+</div>
+<ul class="list-group mt-3">
+<li class="list-group-item"><h3>Location</h3></li>
+<li class="list-group-item">Smart Phone PVT LTD</li>
+<li class="list-group-item">Jubilee Hills, Hyderabad</li>
+<li class="list-group-item">Telangana, India</li>
+</ul>
+</div>
+
+<!-- Right Side -->
+<div class="col-md-6">
+<div class="card">
+<div class="card-header bg-primary text-center text-white">
+<h3>Contact Us</h3>
+</div>
+
+<div class="card-body">
+<div class="form-group mb-3">
+<input type="text" class="form-control" placeholder="Name">
+</div>
+
+<div class="form-group mb-3">
+<input type="email" class="form-control" placeholder="Email">
+</div>
+
+<div class="form-group mb-3">
+<input type="text" class="form-control" placeholder="Mobile">
+</div>
+
+<div class="form-group mb-3">
+<input type="text" class="form-control" placeholder="Favourite Brand">
+</div>
+
+<button class="btn btn-primary btn-block">Submit</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<footer class="bg-info text-center text-dark p-4 mt-4">
+<h3>&copy; 2026 Smart Phones</h3>
+<p>All Rights Reserved.</p>
+<p>Developed by <b>Samatha Jeeru</b></p>
+<p>Designed using HTML, CSS, Bootstrap and JavaScript</p>
+<p>Explore the latest smartphones, compare top brands, and find the perfect device for your needs.</p>
+</footer>
+<script src="jquery.js"></script>
+<script src="popper.js"></script>
+<script src="bootstrap.js"></script>
+<script src="mdb.js"></script>
+<script>
+$('.carousel').carousel({
+interval: 2000
+})
+</script>
+</body>
+</html>
